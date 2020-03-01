@@ -13,6 +13,11 @@
   }
 }
 
+.enchortag{
+  text-decoration: none;
+  color: gray;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -36,3 +41,171 @@
     transform: rotate(360deg);
   }
 }
+.NavigatonTab{
+  position: fixed;
+  bottom:0;
+  z-index:9;
+  width: 100%;
+  height:50px;
+  background-color: #ffffff;
+  text-align: center;
+}
+.menuname{
+  font-size: 10px;
+}
+.navicons{
+  color: gray;
+  font-size: 20px;
+  padding-bottom: 2px;
+}
+.navicons:hover{
+  color: #304AC4;
+}
+
+.header{
+  background-color:#FAFAFA;
+}
+.logo{
+  max-height: 100px;
+  max-width: 70px;
+}
+.search-box{
+  position: absolute;
+  bottom:9%;
+  right:4%;
+}
+.iconsheader{
+  font-size:40px;
+  padding: 5px 5px;
+}
+.iconsheader:hover{
+  color:blue;
+}
+.askmayabanner{
+  margin-top: 10px;
+  padding-bottom: 10px;
+
+
+}
+.askmaybanner-txt{
+  padding:7px !important;
+}
+
+.backbuuttonheader{
+  padding-top:7%;
+  height: 80px;
+  background-color: #FEFEFE;
+  
+}
+.backbutton{
+  font-size:17px;
+  color:lightgray;
+}
+.backbuttonheadertext{
+  color:lightgray;
+  font-size: 17px;
+
+}
+.anonymousboxcontent{
+  
+  padding-left:5px;
+}
+.anonymousbox{
+  margin-top: 15px;
+  
+}
+.answer{
+  margin-top: 20px;
+}
+.Dravatar{
+  color: blue;
+}
+.Drname{
+  color: blue;
+}
+.top-icon{
+  color:#ffffff;
+  font-size: 30px;
+  margin-top:60%;
+}
+
+.searchbar{
+  width: 120%;
+  margin-left:0%;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.searchresult{
+  position: absolute;
+  z-index: 9;
+  background-color:#ffffff;
+  width: 118%;
+  margin-left: -20px;
+}
+
+
+.full-banner{
+  height: 35vh;
+  width: 100%;
+  background-color: #EEF0EF;
+  margin-top:10px;
+  border-radius:10px;
+}
+
+
+.btn-primary{
+  background-color: purple !important;
+  border: none !important;
+
+}
+
+.bannerbutton{
+  background-color: purple;
+}
+.banner-content{
+  padding: 30px;
+
+}
+
+.tilesview{
+  height:80px;
+  background-color:#ffffff;
+  border:1px solid #FAFAFA;
+  margin-top:15px;
+  padding-left: 3px;
+  text-align: center;
+}
+.tilesviewsecond{
+
+  height: 85px;
+  background-color:#ffffff;
+  border:1px solid #FAFAFA;
+  padding-left: 3px;
+  text-align: center;
+
+}
+
+.service-images{
+  height: 40px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+
+.carousel .thumb{
+display: none !important;
+}
+.carousel .control-dots{
+  display: none !important;
+
+}
+.carousel .slide{
+  background-color: transparent !important;
+}
+.carousel .carousel-status{
+  display: none;
+}
+
