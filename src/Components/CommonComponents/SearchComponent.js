@@ -70,21 +70,17 @@ class Search extends Component {
    return (
     <div className="container">
         <input
+        style={{fontFamily:'FontAwesome'}}
         className="searchbar"
         type="text"
         value={query}
-        id="search-input"
-        placeholder="খুঁজুন আপনার মনের যত জিজ্ঞাসা &#xF002;"
+        id="search-input" 
+        placeholder="খুঁজুন আপনার মনের যত জিজ্ঞাসা  &#xF002;"
         onChange={this.handleOninputchange}
         
-         />
-        
-         
-          <div class="searchresult">
-              
-              
-          {records.map(item => (
-              
+         /> 
+          <div class="searchresult">   
+          {records.map(item => (  
               <Link to={"/questiondetails/"+item.id}><div key={item.id}>{item.body}<hr/></div></Link>
           ))}
           

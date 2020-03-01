@@ -18,39 +18,39 @@ class Slider extends Component {
    return (
     <Carousel autoPlay style={{height:'200px'}}>
     <div>
-                  <Row style={{paddingTop:'30px'}}>
-                  <Col xs={{ span:3,offset:1}}>
+                    <Row style={{paddingTop:'30px'}}>
+                      <Col xs={{ span:3,offset:1}}>
                           <img src="https://i.imgur.com/QHyLkrT.jpg"/>
                         </Col>
                         <Col xs={{ span:7 }}>
                         <div className="text-left">
                         <h5>মায়া প্রেসক্রিপশন</h5>
-                       <p><strike>ট১৯৯</strike>১০০</p> 
-                        <p style={{fontSize:'17px',color:'gray'}}>ফোনেই নিনই ডিজিটাল প্রেসক্রিপশন<br/> নিরাপদ এবং গোপনীয় সেবা</p>
+                        <p><strike>ট১৯৯ </strike>১০০</p> 
+                        <h5 style={{fontSize:'12px',color:'gray'}}>ফোনেই নিনই ডিজিটাল প্রেসক্রিপশন<br/> নিরাপদ এবং গোপনীয় সেবা</h5>
                         <Button className="bannerbutton">এখুনি কিনুন</Button> 
                         </div>
                         </Col>
                   </Row>
     </div>
     <div>
-                  <Row style={{paddingTop:'30px'}}>
-                  <Col xs={{ span:3,offset:1}}>
+                   <Row style={{paddingTop:'30px'}}>
+                      <Col xs={{ span:3,offset:1}}>
                           <img src="https://i.imgur.com/QHyLkrT.jpg"/>
                         </Col>
                         <Col xs={{ span:7 }}>
                         <div className="text-left">
                         <h5>মায়া প্রেসক্রিপশন</h5>
-                        <p><strike>ট১৯৯</strike>১০০</p> 
-                        <h5 style={{fontSize:'17px',color:'gray'}}>ফোনেই নিনই ডিজিটাল প্রেসক্রিপশন<br/> নিরাপদ এবং গোপনীয় সেবা</h5>
+                        <p><strike>ট১৯৯ </strike>১০০</p> 
+                        <h5 style={{fontSize:'12px',color:'gray'}}>ফোনেই নিনই ডিজিটাল প্রেসক্রিপশন<br/> নিরাপদ এবং গোপনীয় সেবা</h5>
                         <Button className="bannerbutton">এখুনি কিনুন</Button> 
                         </div>
                         </Col>
                   </Row>
-    </div>
+                   </div>
     
 
     <div>
-    <img/>
+    
                   <Row style={{paddingTop:'30px'}}>
                       <Col xs={{ span:3,offset:1}}>
                           <img src="https://i.imgur.com/QHyLkrT.jpg"/>
@@ -58,12 +58,13 @@ class Slider extends Component {
                         <Col xs={{ span:7 }}>
                         <div className="text-left">
                         <h5>মায়া প্রেসক্রিপশন</h5>
-                        <p><strike>ট১৯৯</strike>১০০</p> 
-                        <h5 style={{fontSize:'17px',color:'gray'}}>ফোনেই নিনই ডিজিটাল প্রেসক্রিপশন<br/> নিরাপদ এবং গোপনীয় সেবা</h5>
+                        <p><strike>ট১৯৯ </strike>১০০</p> 
+                        <h5 style={{fontSize:'12px',color:'gray'}}>ফোনেই নিনই ডিজিটাল প্রেসক্রিপশন<br/> নিরাপদ এবং গোপনীয় সেবা</h5>
                         <Button className="bannerbutton">এখুনি কিনুন</Button> 
                         </div>
                         </Col>
                   </Row>
+                  <img/>
     </div>
 </Carousel>
   
