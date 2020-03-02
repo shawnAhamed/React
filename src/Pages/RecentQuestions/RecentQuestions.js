@@ -2,17 +2,15 @@ import React from 'react';
 import '../../App.css';
 import NavigatonTab from '../../Components/CommonComponents/NavigationTab';
 import Header from '../../Components/CommonComponents/Header';
-import Stream from './stream';
-import Loaddata from './infinitescroll'
+
+
+import RecentQStream from '../RecentQuestions/RecentQstream'
 
 function QuestionStream() {
   return (
-    <div className="Home">
-        <Header/>
-        <Stream/>  
-        <Loaddata/>
+    <div className="">
+        <RecentQStream/> 
     </div>
   );
 }
-
-export default QuestionStream;
+export default RecentQStream;

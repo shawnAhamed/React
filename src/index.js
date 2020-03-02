@@ -7,6 +7,7 @@ import QuestionStream from '../src/Pages/QuestionStream/QuestionStream';
 import NavigationTab from '../src/Components/CommonComponents/NavigationTab';
 import QuestionDetails from '../src/Pages/QuestonDetailsPage/Questiondetails';
 import Detailspage from '../src/Pages/QuestonDetailsPage/Questiondetails';
+import RecentQStream from '../src/Pages/RecentQuestions/RecentQuestions';
 
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -20,8 +21,9 @@ ReactDOM.render((
       <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/stream" component={QuestionStream} />
-      <Route path="/questiondetails/:id" component={QuestionDetails} />
-            <Route path="/questiondetails/" component={Detailspage} />
+      <Route path="/questiondetails/:id/:slug/:tag_id" component={QuestionDetails} />
+      <Route path="/questiondetails/" component={Detailspage} />
+      <Route path="/recentquestions" component={RecentQStream} />
       <Route path="/*" component={Errorpage} />
       </Switch>
 

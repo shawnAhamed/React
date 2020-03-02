@@ -8,9 +8,10 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Header from '../../Components/CommonComponents/Header';
 
 
-class Stream extends React.Component {
+class RecentQStream extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -52,7 +53,9 @@ class Stream extends React.Component {
       }
       else {
         return (
+          
           <div className="stramcard">
+              <Header/>
           {data.map(item => (
             item.response_type == 'QA' ?
                 
@@ -70,7 +73,7 @@ class Stream extends React.Component {
                    <Card.Text>
                      {item.answer || <Skeleton count={1} width={300} />}
                    </Card.Text>
-                   <Link to={"/questiondetails/"+item.question_id+'/'+item.question_body+'/'+item.tag_id}><Button variant="outline-info" className="pull-right">Details</Button></Link>
+                   <Link to={"/questiondetails/"+item.question_id+'/hello/'+item.tag_id}><Button variant="outline-info" className="pull-right">Details</Button></Link>
                  </Card.Body>
                 </Card>
             :
@@ -90,4 +93,4 @@ class Stream extends React.Component {
     }
   }
 
-  export default Stream;
+  export default RecentQStream;
