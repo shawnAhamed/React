@@ -9,6 +9,11 @@ import {
   Link
 } from "react-router-dom";
 
+import { FaRegComments } from "react-icons/fa";
+import { AiOutlineLike } from "react-icons/ai";
+import { IoMdShareAlt } from "react-icons/io";
+
+
 
 class Stream extends React.Component {
     constructor(props) {
@@ -52,15 +57,15 @@ class Stream extends React.Component {
       }
       else {
         return (
-          <div className="stramcard">
+          <div className="stramcard" style={{marginBottom:'50px',}}>
           {data.map(item => (
             item.response_type == 'QA' ?
                 
-                 <Card style={{ width: '100%' }} key={item.question_id}>
+                 <Card style={{ width: '100%',backgroundColor: '#F2E1C6' }} key={item.question_id}>
                  <Card.Body>
                    <Card.Title>{item.question_body || <Skeleton count={1} width={300} />}</Card.Title>
                    <Row>
-                   <Col xs="2"><Skeleton circle={true} height={55} width={55} /></Col> 
+                   <Col xs="2"><img src="https://i.imgur.com/BWi8fb8.jpg" className="dravatar"/></Col> 
                    <Col xs="10">
                    <Card.Subtitle className="mb-2 text-muted">{item.specialist_name || <Skeleton count={1} width={50} />} </Card.Subtitle>
                    <Card.Subtitle className="mb-2 text-muted">{item.designation}</Card.Subtitle>
@@ -70,12 +75,18 @@ class Stream extends React.Component {
                    <Card.Text>
                      {item.answer || <Skeleton count={1} width={300} />}
                    </Card.Text>
-                   <Link to={"/questiondetails/"+item.question_id+'/'+item.question_body+'/'+item.tag_id}><Button variant="outline-info" className="pull-right">Details</Button></Link>
+                   <Link to={"/questiondetails/"+item.question_id+'/'+item.question_body.substring(0,20)+'/'+item.tag_id}><Button variant="outline-info" className="pull-right">Details</Button></Link>
+                   
                  </Card.Body>
+                 <Row style={{textAlign:'center'}}>
+                     <Col xs="4"><AiOutlineLike style={{margin:'5px',fontSize:'25px'}}/> {item.likes}</Col>
+                     <Col xs="4"><FaRegComments style={{margin:'5px',fontSize:'25px'}}/>{item.comments}</Col>
+                     <Col xs="4"><IoMdShareAlt style={{margin:'5px',fontSize:'25px'}}/></Col>
+                   </Row>
                 </Card>
             :
            
-                <Card style={{ width: '100%' }} key={item.card_id}>
+                <Card style={{ width: '100%',backgroundColor:'#F2C6CB' }} key={item.card_id}>
                  <Card.Body>
                    <Row> 
                     <Image src={item.image_url} fluid/>

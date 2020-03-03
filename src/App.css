@@ -149,11 +149,14 @@
 
 
 .full-banner{
-  height: 35vh;
   width: 100%;
   background-color: #EEF0EF;
   margin-top:10px;
   border-radius:10px;
+  background-image:url('https://i.imgur.com/lpNjC5E.jpg');
+  background-position: left;
+  background-attachment: cover;
+  background-size: cover;
 }
 
 
@@ -178,6 +181,7 @@
   margin-top:15px;
   padding-left: 3px;
   text-align: center;
+  border:1px solid #EFEFEF;
 }
 .tilesviewsecond{
 
@@ -186,6 +190,7 @@
   border:1px solid #FAFAFA;
   padding-left: 3px;
   text-align: center;
+  border:1px solid #EFEFEF;
 
 }
 
@@ -217,4 +222,12 @@ display: none !important;
   display: none;
   
 }
+.dravatar{
+  height: 60px ;
+  width: 60px;
+  border-radius: 50%;
+}
 
+.streamcardcontent{
+  background-color: #F2E1C6;
+}

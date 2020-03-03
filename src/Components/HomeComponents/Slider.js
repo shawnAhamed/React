@@ -17,49 +17,51 @@ class Slider extends Component {
  render() {
    return (
     <Carousel autoPlay style={{height:'200px'}}>
-    <div>
+    <div style={{backgroundColor:'#8C9DED'}}>
                     <Row style={{paddingTop:'30px'}}>
                       <Col xs={{ span:3,offset:1}}>
-                          <img src="https://i.imgur.com/QHyLkrT.jpg"/>
+                          <img src="https://i.imgur.com/w0Tsmbz.png"/>
                         </Col>
                         <Col xs={{ span:7 }}>
                         <div className="text-left">
                         <h5>মায়া প্রেসক্রিপশন</h5>
                         <p><strike>ট১৯৯ </strike>১০০</p> 
-                        <h5 style={{fontSize:'12px',color:'gray'}}>ফোনেই নিনই ডিজিটাল প্রেসক্রিপশন<br/> নিরাপদ এবং গোপনীয় সেবা</h5>
+                        <h5 style={{fontSize:'14px',color:'#fff'}}>ফোনেই নিনই ডিজিটাল প্রেসক্রিপশন<br/> নিরাপদ এবং গোপনীয় সেবা</h5>
                         <Button className="bannerbutton">এখুনি কিনুন</Button> 
                         </div>
                         </Col>
                   </Row>
+                  <img/>
     </div>
-    <div>
+    <div style={{backgroundColor:'#BFB1E0'}}>
                    <Row style={{paddingTop:'30px'}}>
                       <Col xs={{ span:3,offset:1}}>
-                          <img src="https://i.imgur.com/QHyLkrT.jpg"/>
+                          <img src="https://i.imgur.com/w0Tsmbz.png"/>
                         </Col>
                         <Col xs={{ span:7 }}>
                         <div className="text-left">
-                        <h5>মায়া প্রেসক্রিপশন</h5>
+                        <h5>মায়া অলয়েল প্রেসক্রিপশন</h5>
                         <p><strike>ট১৯৯ </strike>১০০</p> 
-                        <h5 style={{fontSize:'12px',color:'gray'}}>ফোনেই নিনই ডিজিটাল প্রেসক্রিপশন<br/> নিরাপদ এবং গোপনীয় সেবা</h5>
+                        <h5 style={{fontSize:'14px',color:'#fff'}}>ফোনেই নিনই ডিজিটাল প্রেসক্রিপশন<br/> নিরাপদ এবং গোপনীয় সেবা</h5>
                         <Button className="bannerbutton">এখুনি কিনুন</Button> 
                         </div>
                         </Col>
                   </Row>
+                  <img/>
                    </div>
     
 
-    <div>
+    <div style={{backgroundColor:'#8C9DED'}} >
     
                   <Row style={{paddingTop:'30px'}}>
-                      <Col xs={{ span:3,offset:1}}>
-                          <img src="https://i.imgur.com/QHyLkrT.jpg"/>
+                      <Col xs={{ span:3,offset:1}} >
+                          <img src="https://i.imgur.com/w0Tsmbz.png"/>
                         </Col>
                         <Col xs={{ span:7 }}>
                         <div className="text-left">
                         <h5>মায়া প্রেসক্রিপশন</h5>
                         <p><strike>ট১৯৯ </strike>১০০</p> 
-                        <h5 style={{fontSize:'12px',color:'gray'}}>ফোনেই নিনই ডিজিটাল প্রেসক্রিপশন<br/> নিরাপদ এবং গোপনীয় সেবা</h5>
+                        <h5 style={{fontSize:'14px',color:'#fff'}}>ফোনেই নিনই ডিজিটাল প্রেসক্রিপশন<br/> নিরাপদ এবং গোপনীয় সেবা</h5>
                         <Button className="bannerbutton">এখুনি কিনুন</Button> 
                         </div>
                         </Col>
