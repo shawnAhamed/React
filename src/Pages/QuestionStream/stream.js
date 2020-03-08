@@ -56,20 +56,30 @@ class Stream extends React.Component {
         </div>;
       }
       else {
+        var i=0;
+        console.log(data[i])
         return (
           <div className="stramcard" style={{marginBottom:'50px',}}>
           {data.map(item => (
             item.response_type == 'QA' ?
                 
-                 <Card style={{ width: '100%',backgroundColor: '#F2E1C6' }} key={item.question_id}>
+                 <Card style={{ width: '100%',backgroundColor: '#F2E1C6' }} key={item.index}>
                  <Card.Body>
-                   <Card.Title>{item.question_body || <Skeleton count={1} width={300} />}</Card.Title>
+                 <Row>
+                   <Col xs="1"><Skeleton circle={true} height={45} width={45} /></Col> 
+                   <Col xs="10" className="anonymousbox">
+                   <Card.Subtitle className="mb-2 text-muted anonymousboxcontent">{"নাম প্রকাশে অনিচ্ছুক"  || <Skeleton/>} </Card.Subtitle>
+                   <Card.Subtitle className="mb-2 text-muted anonymousboxcontent">৪ ঘণ্টা আগে</Card.Subtitle>
+                   </Col>
+                   
+                   </Row> 
+                   <Card.Title style={{marginTop:'10px'}}>{item.question_body || <Skeleton count={1} width={300} />}</Card.Title>
                    <Row>
-                   <Col xs="2"><img src="https://i.imgur.com/BWi8fb8.jpg" className="dravatar"/></Col> 
-                   <Col xs="10">
-                   <Card.Subtitle className="mb-2 text-muted">{item.specialist_name || <Skeleton count={1} width={50} />} </Card.Subtitle>
-                   <Card.Subtitle className="mb-2 text-muted">{item.designation}</Card.Subtitle>
-                   <Card.Subtitle className="mb-2 text-muted">{item.qualification}</Card.Subtitle>
+                   <Col xs="1"><img src="https://i.imgur.com/BWi8fb8.jpg" className="dravatar"/></Col> 
+                   <Col xs="10" className="expertsbox">
+                   <Card.Subtitle className="mb-2 text-muted drnamedes">{item.specialist_name || <Skeleton count={1} width={50} />} </Card.Subtitle>
+                   <Card.Subtitle className="mb-2 text-muted drnamedes">{item.designation}</Card.Subtitle>
+                   <Card.Subtitle className="mb-2 text-muted drnamedes">{item.qualification}</Card.Subtitle>
                    </Col>
                    </Row>
                    <Card.Text>
@@ -82,7 +92,8 @@ class Stream extends React.Component {
                      <Col xs="4"><AiOutlineLike style={{margin:'5px',fontSize:'25px'}}/> {item.likes}</Col>
                      <Col xs="4"><FaRegComments style={{margin:'5px',fontSize:'25px'}}/>{item.comments}</Col>
                      <Col xs="4"><IoMdShareAlt style={{margin:'5px',fontSize:'25px'}}/></Col>
-                   </Row>
+                  </Row>
+                   
                 </Card>
             :
            

@@ -14,10 +14,11 @@ function Header (){
                 <Container>
                    <Row style={{ backgroundColor: '#613ABD',paddingTop:'10px' }}>
                        <div ></div>
-                       <Col xs="10"><a href="/"><img src="https://i.imgur.com/EXQmW2p.png"/></a></Col>
+                       <Col xs="10"><a href="/"><img src="https://i.imgur.com/EXQmW2p.png" style={{height:'80px',width:'150px',padding:'10px'}}/></a></Col>
                        <Col xs="2"><IoMdGlobe className="top-icon"/></Col>
                        <Col xs="10">
                        <Search/>
+                       
                        </Col>    
                    </Row>
                 </Container>

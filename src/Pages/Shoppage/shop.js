@@ -8,8 +8,7 @@ function Shop() {
   return (
     <div className="Home">
         <Header/>
-        <iframe src="https://maya.com.bd/" style={{height:'100vh',width:'100%'}}></iframe>
-    
+        <iframe src="https://blog.maya.com.bd/" style={{height:'70vh',width:'100%'}}></iframe>
     </div>
   );
 }

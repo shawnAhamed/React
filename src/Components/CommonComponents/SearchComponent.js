@@ -75,13 +75,14 @@ class Search extends Component {
         type="text"
         value={query}
         id="search-input" 
-        placeholder="খুঁজুন আপনার মনের যত জিজ্ঞাসা  &#xF002;"
+        placeholder="খুঁজুন আপনার মনের যত জিজ্ঞাসা                                             
+        &#xF002;"
         onChange={this.handleOninputchange}
         
          /> 
-          <div class="searchresult">   
+          <div className="searchresult">   
           {records.map(item => (  
-              <Link to={"/questiondetails/"+item.id}><div key={item.id}>{item.body}<hr/></div></Link>
+              <Link to={"/questiondetails/"+item.id} style={{textDecoration:'none',color:'black',padding:'10px 10px'}}><div key={item.id}>{item.body.substring(0,50)}<hr/></div></Link>
           ))}
           
           </div>

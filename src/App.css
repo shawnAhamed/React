@@ -111,7 +111,8 @@
   padding-left:5px;
 }
 .anonymousbox{
-  margin-top: 15px;
+  margin-top: 13px;
+  margin-left:15px;
   
 }
 .answer{
@@ -130,13 +131,14 @@
 }
 
 .searchbar{
-  width: 120%;
+  width: 125%;
   margin-left:0%;
   border-radius: 25px;
   margin-bottom: 20px;
   text-align: center;
-  margin-top: 15px;
+  margin-top:1px;
   padding: 5px;
+  font-size: 13px;
 }
 
 .searchresult{
@@ -154,7 +156,6 @@
   margin-top:10px;
   border-radius:10px;
   background-image:url('https://i.imgur.com/lpNjC5E.jpg');
-  background-position: left;
   background-attachment: cover;
   background-size: cover;
 }
@@ -177,7 +178,7 @@
 .tilesview{
   height:80px;
   background-color:#ffffff;
-  border:1px solid #FAFAFA;
+  
   margin-top:15px;
   padding-left: 3px;
   text-align: center;
@@ -187,7 +188,7 @@
 
   height: 85px;
   background-color:#ffffff;
-  border:1px solid #FAFAFA;
+  
   padding-left: 3px;
   text-align: center;
   border:1px solid #EFEFEF;
@@ -223,11 +224,27 @@ display: none !important;
   
 }
 .dravatar{
-  height: 60px ;
-  width: 60px;
+  height:45px ;
+  width: 45px;
   border-radius: 50%;
 }
 
 .streamcardcontent{
   background-color: #F2E1C6;
+  
+}
+.drnamedes{
+  font-size: 10px;
+  line-height:12px;
+}
+.expertsbox{
+margin-left:20px;
+font-size: 15px;
+line-height:12px;
+
+
+}
+
+.enchortag{
+  text-decoration: none !important;
 }

@@ -29,10 +29,10 @@ class QuestionDetils extends React.Component {
       const { match: { params } } = this.props;
       //console.log('props', this.props)
       var qid=params.id;
-      var slug=params.slug;
-      var tag_id=params.tag_id;
-      console.log("params",qid,slug,tag_id)
-      fetch("http://api.maya-apa.com/api/v1/web/question/"+qid+"/"+slug+"/"+tag_id)
+      // var slug=params.slug;
+      // var tag_id=params.tag_id;
+      //console.log("params",qid,slug,tag_id)
+      fetch("http://api.maya-apa.com/api/v1/web/question/"+qid+""+"")
         .then(res => res.json())
         .then(
           (result) => {
